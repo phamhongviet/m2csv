@@ -12,6 +12,7 @@ alias m2csv='/path/to/m2csv/m2csv.py'
 
 ## Usage
 ### Synopsis
+```
 m2csv [-v] [-i INPUT FILE] [-o OUTPUT FILE]
 
 	-v
@@ -22,6 +23,7 @@ m2csv [-v] [-i INPUT FILE] [-o OUTPUT FILE]
 
 	-o OUTPUT FILE
 		Specify output file name, use STDOUT if omitted.
+```
 
 ### Example
 ```
