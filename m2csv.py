@@ -56,6 +56,8 @@ class m2csv:
 				colon = line.index(':')
 				field_name = line[0:colon]
 				row[field_name] = line[colon+2:]
+		writer.writerow(row)
+		del row
 				
 # check if string is a record seperator
 # look like this:
