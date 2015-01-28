@@ -2,12 +2,16 @@
 This little program convert mysql output into csv file
 
 ## Requirement
-* python 2.7
+* python (2.6 or 2.7)
 
 ## Install
 Clone this repository, then create an alias:        
 ```
-alias m2csv='/path/to/m2csv/m2csv.py'
+$ alias m2csv='/path/to/m2csv/m2csv.py'
+```
+or, copy m2csv.py         
+```
+# cp /path/to/m2csv/m2csv.py /usr/local/bin/m2csv
 ```
 
 ## Usage
@@ -39,4 +43,5 @@ m2csv -i result.txt -o result.csv
 * Support Unicode
 * Support other mysql output formats
 * Avoid overwriting output file
-* Tested on python 2.7.6. Need to test on other version of python
+* Tested on python 2.6.6, 2.7.6, 2.7.9. Need to test on other version of python
+* Provide better verbose output
