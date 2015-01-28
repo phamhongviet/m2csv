@@ -40,7 +40,8 @@ class m2csv:
 				row1[field_name] = line[colon+2:]
 		# start writing CSV file
 		writer = csv.DictWriter(output_fo, fieldnames=header)
-		writer.writeheader()
+		# write header and first row
+		writer.writerow( dict([ (field, field) for field in header ])) # python 2.6 compatible
 		writer.writerow(row1)
 		del row1
 
